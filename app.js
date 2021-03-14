@@ -16,4 +16,11 @@ function keyUp(event) {
 
 function caculateNumericOutput() {
   student.name = document.getElementById('name').value;
+
+  var totalNameValue = 0;
+  for (var i = 0; i < student.name.length; i++) {totalNameValue +=
+    totalNameValue += student.name.charCodeAt(i)
+  }
+  var output = "Total Numeric value of person's name is "+ totalNameValue;
+  document.getElementById('output').innerText = output;
 }
