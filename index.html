@@ -9,7 +9,11 @@
   <body>
     <h1>My First Angular App</h1>
 <div ng-controller="MyFirstController">
-<input type="text" ng-model="name">
+<input type="text"
+  ng-model="name"
+  ng-keyup="displayValue();">
+<br/>
+Total number : {{totalValue}}
 </div>
   </body>
 </html>
